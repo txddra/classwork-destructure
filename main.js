@@ -45,7 +45,7 @@ let arr2 = [1,2,3,4,5,6]
 // let three = arr2[2];
 // let four = arr2[3];
 let[, , three,four,...rest]= arr2
-console.log(rest)
+console.log(arr2)
 // console.log(three)
 
 
