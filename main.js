@@ -11,10 +11,14 @@ let arr = [
 
 //Create an object out of the arr above then using destructuring, declare variables using the object keys.
 //should log into an object
-const obj =Object.fromEntries(arr)
-console.log(obj)
+const obj = Object.fromEntries(arr)
+// console.log()
 
-// console.log(`Hello, my name is ${name}, I am ${age}, and my eyes are ${eyes}`)
+  const{ name, age, eyes  } = obj;
+
+
+console.log(`Hello, my name is ${name}, I am ${age}, and my eyes are ${eyes}`)
+
 // const obj = {
 //   name: 'jon',
 //   age: 20,
