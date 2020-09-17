@@ -10,6 +10,11 @@ let arr = [
 ];
 
 //Create an object out of the arr above then using destructuring, declare variables using the object keys.
+//should log into an object
+const obj =Object.fromEntries(arr)
+console.log(obj)
+
+// console.log(`Hello, my name is ${name}, I am ${age}, and my eyes are ${eyes}`)
 // const obj = {
 //   name: 'jon',
 //   age: 20,
@@ -24,20 +29,20 @@ let arr = [
 // } = obj;
 
 // would log out an array of arrays
-console.log(Object.values(arr))
 
 
-// console.log(`Hello, my name is ${name}, I am ${age}, and my eyes are ${eyes}`)
+
+
 
 2.
 let arr2 = [1,2,3,4,5,6]
 //a. Set 3 variables names: the third index should be called 'three', the fourth item 'four' and the rest of the items thereafter 'rest'
 //b. Swap the third and fourth item variable values
-let three = arr2[2];
-let four = arr2[3];
-let rest =[three, four, ,]
-console.log(four)
-console.log(three)
+// let three = arr2[2];
+// let four = arr2[3];
+let[, , three,four,...rest]= arr2
+console.log(rest)
+// console.log(three)
 
 
 console.log([three, four] = [four, three])
